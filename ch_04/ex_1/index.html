@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="script.js"></script>
+</head>
+<body>
+<script>
+	var myArray = eJS.range(10, 14),
+		myList = {};
+	console.log(myArray);
+	console.log(eJS.reverseArray(myArray));
+	console.log("eJS.reverseArrayInPlace(myArray)");
+	console.log(eJS.reverseArrayInPlace(myArray));
+	console.log("eJS.arrayToList(myArray)");
+	myList = eJS.arrayToList(myArray);
+	console.log(myList);
+	console.log("eJS.listToArray(myList)");
+	console.log(eJS.listToArray(myList))
+
+	var obj = {here: {is: "an"}, object: 2};
+	/*console.log(eJS.deepEqual(obj, obj));
+	 // → true
+	 console.log(eJS.deepEqual(obj, {here: 1, object: 2}));*/
+	// → false
+	console.log(eJS.deepEqual(obj, {here: {is: "an", my: "awesome"}, object: 2}));
+	// → true
+</script>
+</body>
+</html>
